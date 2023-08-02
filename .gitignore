@@ -1,3 +1,7 @@
-/target
+target/
+.vscode/
+
 *.bin
 *.txt
+
+Cargo.lock
