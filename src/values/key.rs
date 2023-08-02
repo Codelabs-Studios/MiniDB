@@ -1,5 +1,5 @@
-use std::collections::HashMap;
 use std::any::Any;
+use std::collections::HashMap;
 
 pub struct Key {
     data: HashMap<String, Box<dyn Any>>,
