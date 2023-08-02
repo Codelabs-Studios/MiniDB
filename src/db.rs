@@ -1,14 +1,14 @@
 use std::{fs::File, path::Path};
 
-use crate::collection;
+use crate::container;
 
 pub struct Database {
     filename: String,
-    collections: Vec<collection::Collection>,
+    collections: Vec<container::Container>,
 }
 
 impl Database {
-    fn read_collections() -> Vec<collection::Collection> {
+    fn read_collections() -> Vec<container::Container> {
         unimplemented!()
     }
 
