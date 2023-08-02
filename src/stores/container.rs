@@ -3,8 +3,8 @@ use hashbrown::HashMap;
 use crate::values::key::Key;
 
 pub struct Container {
-    name: String,
-    documents: Vec<HashMap<String, Key>>,
+    pub name: String,
+    pub documents: Vec<HashMap<String, Key>>,
 }
 
 /*
@@ -35,13 +35,13 @@ impl Container {
         }
     }
 
-    pub fn add_document(&mut self, name: String, key: Key) {
+    pub fn add(&mut self, name: String, key: Key) {
         let mut document = HashMap::new();
         document.insert(name, key);
         self.documents.push(document);
     }
 
-    pub fn get_document(&self, index: usize) -> Option<&HashMap<String, Key>> {
+    pub fn get(&self, index: usize) -> Option<&HashMap<String, Key>> {
         self.documents.get(index)
     }
 }
