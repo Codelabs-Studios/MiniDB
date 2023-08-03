@@ -40,7 +40,7 @@ fn load_containers(file: String) -> Vec<HashMap<String, Container>> {
     let mut containers = Vec::new();
 
     for parse in parsed {
-        containers.push(serde_json::from_str(&parse).unwrap());
+        containers.push();
     }
 
     containers

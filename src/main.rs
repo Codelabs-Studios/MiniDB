@@ -2,6 +2,11 @@ use std::io::Read;
 
 mod encoding;
 
+mod json {
+    mod deserialize;
+    mod serialize;
+}
+
 mod stores {
     pub mod container;
     pub mod db;

@@ -8,21 +8,21 @@ pub struct Container {
 }
 
 /*
-Container {
-    "TestContainer",
-    {
-        aaron: {
-            name: "Aaron",
-            age: 20,
+{
+    "name": "TestContainer",
+    "keys": {
+        "aaron": {
+            "name": "Aaron",
+            "age": 20
         },
-        bob: {
-            name: "Bob",
-            age: 21,
+        "bob": {
+            "name": "Bob",
+            "age": 21
         },
-        carl: {
-            name: "Carl",
-            age: 22,
-        },
+        "carl": {
+            "name": "Carl",
+            "age": 22
+        }
     }
 }
 */
